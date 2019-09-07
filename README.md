@@ -1,255 +1,202 @@
-<!--
-*** Obrigado por estar vendo o nosso README. Se você tiver alguma sugestão
-*** que possa melhorá-lo ainda mais dê um fork no repositório e crie uma Pull
-*** Request ou abra uma Issue com a tag "sugestão".
-*** Obrigado novamente! Agora vamos rodar esse projeto incrível :D
--->
-
 <!-- PROJECT SHIELDS -->
 
-[![npm](https://img.shields.io/npm/v/react-native-template-rocketseat-basic.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-rocketseat-basic)
-[![npm](https://img.shields.io/npm/dt/react-native-template-rocketseat-basic.svg)](https://www.npmjs.com/package/react-native-template-rocketseat-basic)
-[![GitHub issues](https://img.shields.io/github/issues-raw/rocketseat/react-native-template-rocketseat-basic.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-basic/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/rocketseat/react-native-template-rocketseat-basic.svg)](https://github.com/Rocketseat/react-native-template-rocketseat-basic/commits/master)
-[![NPM](https://img.shields.io/npm/l/react-native-template-rocketseat-basic.svg)](https://choosealicense.com/licenses/mit)
+[![Contributors][contributors-shield]]()
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://rocketseat.com.br">
-    <img src="https://s3-sa-east-1.amazonaws.com/rocketseat-cdn/rocketseat_logo_roxa.png" alt="Logo">
-  </a>
+<div style="text-align:center">
+<p>
 
-  <h3 align="center">Template Rocketseat Basic</h3>
+  <h3 align="center">Instagram Interface</h3>
+  <p align="center">
+    The instagram clone interface with lazy-loading, img blur, infinity-scroll and pull-to-refresh feature created with React Native.
+    <br />
+    <a href="https://github.com/guiaramos/instagram-interface.git"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/guiaramos/instagram-interface.git">View Demo</a>
+    ·
+    <a href="https://github.com/guiaramos/instagram-interface.git/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/guiaramos/instagram-interface.git/issues">Request Feature</a>
+  </p>
 </p>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
-## Tabela de Conteúdo
+## Table of Contents
 
-- [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Sobre o Projeto](#sobre-o-projeto)
-  - [Feito Com](#feito-com)
-- [Começando](#come%C3%A7ando)
-  - [Pré-requisitos](#pr%C3%A9-requisitos)
-  - [Estrutura de Arquivos](#estrutura-de-arquivos)
-  - [Instalação](#instala%C3%A7%C3%A3o)
-    - [Passo Adicional no Android](#passo-adicional-no-android)
-  - [Edição](#edi%C3%A7%C3%A3o)
-  - [Publicação](#publica%C3%A7%C3%A3o)
-- [Contribuição](#contribui%C3%A7%C3%A3o)
-- [Licença](#licen%C3%A7a)
-- [Contato](#contato)
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
 
-## Sobre o Projeto
+## About The Project
 
-Este projeto visa a criação de um template que possa ser utilizado no momento de criação de projetos utilizando React Native, visto que o processo de instalação e configuração das libs no início de um projeto podem gerar certa complexidade e muitas vezes até erros que atrasam o processo, atrapalhando assim o fluxo de desenvolvimento.
+The [Instagram](https://www.instagram.com) is a simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family. The project objective is to be the most close to [Instagram](https://www.instagram.com) UI for "simple task management" list.
 
-### Feito Com
+The project is build in [React Native](reactnative-url).
 
-Abaixo segue o que foi utilizado na criação deste template:
+### Built With
 
-- [React Native](http://facebook.github.io/react-native/) - O React Native é um framework que permite o desenvolvimento de aplicações mobile usando Javascript e React;
-- [React Navigation](https://reactnavigation.org/) - O React Navigation surgiu da necessidade comunidade do React Native de uma navegação de forma fácil de se usar, e escrita toda em Javascript;
-- [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/) - API declarativa que permite a manipulação de toques e gestos no React Native;
-- [Axios](https://github.com/axios/axios) - O Axios é um cliente HTTP baseado em Promises para Browser e NodeJS;
-- [Prop Types](https://github.com/facebook/prop-types) - Verificação de tipo em tempo de execução para propriedades (props) React e objetos semelhantes;
-- [Reactotron](https://github.com/infinitered/reactotron) - O Reactotron é um app Desktop para inspecionar projetos em React ou React Native. Está disponível para macOS, Linux e Windows;
-  - [reactotron-react-native](https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md) - Plugin para configurar o Reactotron para se conectar ao projeto React Native;
-- [Babel](https://babeljs.io/) - O Babel é um compilador JavaScript gratuito e de código aberto e transpiler configurável usado no desenvolvimento de aplicações Javascript;
-  - [babel-eslint](https://github.com/babel/babel-eslint) - Este pacote é um _wrapper_ do parser do Babel para o ESLint;
-  - [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import) - Esse plugin do Babel permite que sejam feitos imports e requires em caminhos baseados em uma raiz(root);
-- [Eslint](https://eslint.org/) - O ESLint é uma ferramenta de lint plugável para JavaScript e JSX;
-  - [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) - Este pacote fornece o .eslintrc do Airbnb como uma configuração compartilhada extensível;
-  - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - Plugin do ESLint com regras para ajudar na validação de imports;
-  - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) - Verificador estático AST das regras do a11y em elementos JSX;
-  - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - Regras de linting do ESLint específicas do React;
-  - [eslint-plugin-react-native](https://github.com/Intellicode/eslint-plugin-react-native) - Regras de linting do ESLint específicas do React Native;
-  - [eslint-import-resolver-babel-plugin-root-import](https://github.com/olalonde/eslint-import-resolver-babel-root-import) - Um resolver da lib _babel-root-import_ para a lib _eslint-plugin-import_;
-- [EditorConfig](https://editorconfig.org/) - O EditorConfig é um formatador de arquivos e coleções em forma de Plugin para Editores de código/texto com o objetivo de manter um padrão de código consistente entre diferentes editores, IDE's ou ambientes;
+This is the list of the tech stack:
+
+[![React-Native][reactnative-shield]][reactnative-url]
 
 <!-- GETTING STARTED -->
 
-## Começando
+## Getting Started
 
-Para conseguir utilizar o template, seja através do React Native CLI ou com uma cópia local dos arquivos, siga os passos abaixo.
+### Prerequisites
 
-### Pré-requisitos
+This is the prerequisites to run the project locally:
 
-Antes de seguirmos para as configurações e uso do template, é ideal que você tenha o ambiente configurado para criar e testar aplicativos em React Native, para isso você pode seguir o guia do link abaixo:
-
-[Ambiente React Native (Android/iOS)](https://github.com/Rocketseat/ambiente-react-native)
-
-### Estrutura de Arquivos
-
-A estrutura de arquivos está da seguinte maneira:
-
-```bash
-rocketseat-basic
-├── src/
-│   ├── config/
-│   │   └── ReactotronConfig.js
-│   ├── images/
-│   │   ├── rocketseat_logo_roxa.png
-│   │   └── rocketseat_logo.png
-│   ├── pages/
-│   │   └── Main/
-│   │       └── index.js
-│   ├── services/
-│   │   └── api.js
-│   ├── index.js
-│   └── routes.js
-├── .editorconfig
-├── .eslintrc.json
-├── .gitignore
-├── babel.config.js
-├── dependencies.json
-├── devDependencies.json
-├── index.js
-├── jsconfig.js
-├── LICENSE
-├── package.json
-└── README.md
-```
-
-Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
-
-### Instalação
-
-1. Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
+- npm
 
 ```sh
-react-native init AwesomeExample --template rocketseat-basic
+npm install npm@latest -g
 ```
 
-2. Depois do projeto criado você pode deletar o arquivo `App.js` da raiz, pois o arquivo `index.js` agora aponta para a pasta **src**.
+### Installation
 
-Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto.
-
----
-
-#### Passo Adicional no Android
-
-Para que os gestos sejam habilitados no Android é necessário um passo a mais, que é bem simples, abra o arquivo `android/app/src/main/java/<pacote_do_projeto>/MainActivity.java`, e começe importando os pacotes como abaixo:
-
-```java
-// ...
-import com.facebook.react.ReactActivity;
-// Importações adicionadas
-import com.facebook.react.ReactActivityDelegate;
-import com.facebook.react.ReactRootView;
-import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
-```
-
-Feito a importação vamos criar um método novo, logo abaixo do `getMainComponentName()`, ficando:
-
-```java
-public class MainActivity extends ReactActivity {
-  @Override
-  protected String getMainComponentName() { ... }
-  // Método adicionado
-  @Override
-  protected ReactActivityDelegate createReactActivityDelegate() {
-    return new ReactActivityDelegate(this, getMainComponentName()) {
-      @Override
-      protected ReactRootView createRootView() {
-        return new RNGestureHandlerEnabledRootView(MainActivity.this);
-      }
-    };
-  }
-}
-```
-
----
-
-### Edição
-
-Nesta seção haverão instruções caso você queira editar o template, explicando para que os diretórios são utilizadas e também os arquivos de configuração.
-
-- **src** - Diretório contendo todos os arquivos da aplicação, é criado um diretório `src` para que o código da aplicação possa ser isolado em um diretório e facilmente portado para outros projetos, se necessário;
-
-  - **config** - Diretório para guardar os arquivos de configuração da aplicação, por exemplo, a configuração de uso do Reactotron e configuração de inicialização do Firebase;
-
-    - **ReactotronConfig.js** - Arquivo contendo a configuração do Reactotron para ser usado na aplicação;
-
-  - **images** - Diretório para armazenar imagens em geral que possam ser utilizadas na aplicação, esse diretório pode ser renomeado para `assets` e dentro de `assets` criar um novo diretório para guardar somente as imagens, assim é possível ter um diretório para guardar todo tipo de arquivo, e não apenas imagens;
-
-  - **pages** - Diretório onde ficam as páginas (telas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
-
-    - **Main** - Diretório exemplo de uma página cujo nome é **Main**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.js`;
-
-      - **index.js** - Arquivo com toda a lógica da página, tal como os componentes visuais a serem renderizados;
-
-  - **services** - Diretório onde serão criados os arquivos relacionados a serviços utilizados na aplicação, por exemplo, requisições HTTP, autenticação com Firebase ou qualquer outro serviço que for utilizado;
-
-    - **api.js** - Arquivo com a configuração da biblioteca Axios para envio de requisições HTTP, o endereço que vem configurado por padrão é para a API do Github;
-
-  - **index.js** - Arquivo responsável por centralizar o código do diretório `src`, nele são chamadas as rotas tal como qualquer outra configuração que precise ser executada na inicialização da aplicação, ele é como um _Entry Point_ do diretório `src`;
-
-  - **routes.js** - Arquivo com as configurações de navegação da aplicação, nele são criados os Navigator disponibilizados na biblitoeca React Navigation;
-
-- **.editorconfig** - Arquivo destinado à configuração do Plugin Editor Config, que padroniza algumas configurações para o editor em diferentes ambientes;
-
-- **.eslintrc.json** - Arquivo de configuração do ESLint, é nele que são inseridas as regras e configurações de Linting do projeto, tal como a configuração do Resolver para o Babel Plugin Root Import e configuração da variável global `__DEV__`;
-
-- **babel.config.js** - Arquivo de configuração do Babel, é nele que é configurado o Babel Plugin Root Import para aceitar imports absolutos na aplicação usando o diretório `src` como raiz;
-
-- **dependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências que devem ser instaladas na aplicação, vale lembrar que as dependências que já vem por padrão no projeto como `react` e `react-native` não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
-
-- **devDependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências de desenvolvimento que devem ser instaladas na aplicação, vale lembrar que as dependências de desenvolvimento que já vem por padrão no projeto como `@babel/core`, `eslint`, entre outras, não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
-
-- **index.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/index.js` que por sua vez chama as rotas da aplicação;
-
-- **jsconfig.json** - Arquivo de configuração do Javascript no Editor, ele é o responsável por ativar o Auto Complete de códigos Javascript na aplicação;
-
-- **package.json** - Diferente dos projetos comuns, esse arquivo tem as configurações necessárias para a publicação do Template no NPM, para saber mais sobre isso veja a seção abaixo.
-
-### Publicação
-
-Para publicar um template como esse o processo bastante simples e rápido.
-
-1. Crie uma conta no [site do NPM](https://www.npmjs.com/);
-
-2. Com a conta criada execute o comando abaixo e insira suas credenciais;
+1. Clone the repo
 
 ```sh
-npm login
+git clone https://github.com/guiaramos/instagram-interface.git
 ```
 
-3. Basta abrir o arquivo `package.json` e modificar as informações de acordo com o seu template, mas as informações mais importantes são duas, o `name` e o `version`, que são os únicos que tem restrições, seguem abaixo as restrições:
+2. Install NPM packages
 
-   1. O `name` sempre deve começar com o prefixo `react-native-template-` seguido do nome do seu template;
-   2. O template deve ser publicado em uma conta pessoal, pois quando publicado em uma **Organization** é acrescentado o prefixo `@<nome_da_organization>` no nome do pacote;
-   3. O `name` deve ser único, não podendo ser igual ao de um template já publicado;
-   4. A `version` deve ser atualizada a cada publicação, se o template está na versão **0.0.1** e é preciso publicar uma atualização no mesmo, a `version` deve ser diferente e superior a versão atual, por exemplo, **0.0.2**;
+```sh
+npm install
+```
 
-4. Após configurar corretamente o `package.json` basta executar no terminal/prompt o comando `npm publish`;
+<!-- USAGE EXAMPLES -->
 
-5. Com a publicação finalizada o template deve ficar disponível através do link `https://www.npmjs.com/package/react-native-template-<nome_do_template>`.
+## Usage
+
+The app usage is very simple: just drag the card and hover to the card on the destination desired.
 
 <!-- CONTRIBUTING -->
 
-## Contribuição
+## Contributing
 
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/FeatureIncrivel`)
-3. Adicione suas mudanças (`git add .`)
-4. Comite suas mudanças (`git commit -m 'Adicionando uma Feature incrível!`)
-5. Faça o Push da Branch (`git push origin feature/FeatureIncrivel`)
-6. Abra uma Pull Request
-
-<!-- LICENSE -->
-
-## Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 <!-- CONTACT -->
 
-## Contato
+## Contact
 
-Rocketseat - [Github](https://github.com/rocketseat) - **oi@rocketseat.com.br**
+[![Gui][gui-shield]][gui-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [DevDocs](https://devdocs.egoist.moe/)
+- [React Native](https://facebook.github.io/react-native/)
+- [styled components](https://www.styled-components.com/)
+- [Adorable Avatars](http://avatars.adorable.io/)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[mongodb-shield]: https://img.shields.io/badge/MongoDB-database-red.svg?logo=MongoDB
+[mongodb-url]: https://www.mongodb.com/what-is-mongodb
+[reactdnd-shield]: https://img.shields.io/badge/react--dnd-utility-blue.svg?logo=React
+[reactdnd-url]: https://react-dnd.github.io/react-dnd/
+[express-shield]: https://img.shields.io/badge/Express-framework-red.svg?logo=JavaScript
+[express-url]: https://expressjs.com/
+[nodemon-shield]: https://img.shields.io/badge/Nodemon-auto--reload-red.svg?logo=Nodemon
+[nodemon-url]: https://nodemon.io/
+[insomnia-shield]: https://img.shields.io/badge/Insomnia-API--debug-red.svg?logo=Apple
+[insomnia-url]: https://insomnia.rest/
+[mongoose-shield]: https://img.shields.io/badge/Mongoose-Object--Modeling-red.svg?logo=MongoDB
+[mongoose-url]: https://mongoosejs.com/
+[react-shield]: https://img.shields.io/badge/React.js-front--end-blue.svg?logo=React
+[react-url]: https://reactjs.org/
+[cors-shield]: https://img.shields.io/badge/CORS-auto--reload-red.svg?logo=Node.js
+[cors-url]: https://www.npmjs.com/package/cors
+[jsx-shield]: https://img.shields.io/badge/JSX-front--end-blue.svg?logo=React
+[jsx-url]: https://reactjs.org/docs/introducing-jsx.html
+[websocket-shield]: https://img.shields.io/badge/Socket.io-front--end-blue.svg?logo=JavaScript
+[websocket-url]: https://socket.io/
+[reactnative-shield]: https://img.shields.io/badge/React--Native-mobile-purple.svg?logo=React
+[reactnative-url]: https://facebook.github.io/react-native/
+[license-shield]: https://img.shields.io/github/license/guiaramos/Best-README-Template.svg?style=flat-square
+[requests-shield]: https://img.shields.io/badge/Requests-python_framework-red.svg?logo=Python
+[beautifulsoup-shield]: https://img.shields.io/badge/Beautiful_Soup-python_framework-red.svg?logo=Python
+[bokeh-shield]: https://img.shields.io/badge/Bokeh-python_framework-red.svg?logo=Python
+[math-shield]: https://img.shields.io/badge/Math-python_framework-red.svg?logo=Python
+[jupyter-shield]: https://img.shields.io/badge/Jupyter_Notebook-code%20editor-lightgrey.svg?logo=jupyter
+[requests-url]: https://2.python-requests.org/en/master/
+[beautifulsoup-url]: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+[bokeh-url]: https://bokeh.pydata.org/en/latest/
+[math-url]: https://docs.python.org/3/library/math.html
+[jupyter-url]: https://jupyter.org/
+[bootstrap4-shield]: https://img.shields.io/badge/Bootstrap%204-front--end%20framework-blue.svg?logo=Bootstrap
+[css-shield]: https://img.shields.io/badge/CSS3-front--end-blue.svg?logo=CSS3
+[pyenv-shield]: https://img.shields.io/badge/Python_Virtual_Envoriment-database-red.svg?logo=Python
+[heruko-shield]: https://img.shields.io/badge/Heroku-server-success.svg?logo=Heroku
+[git-shield]: https://img.shields.io/badge/Git-version_control-success.svg?logo=Git
+[build-shield]: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/badge/contributors-1-orange.svg?style=flat-square
+[license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[vscode-shield]: https://img.shields.io/badge/Visual%20Studio%20Code-code%20editor-lightgrey.svg?logo=visual-studio-code
+[python-shield]: https://img.shields.io/badge/Python-back--end-red.svg?logo=Python
+[hosts-shield]: https://img.shields.io/badge/-Hosts-lightgrey.svg?logo=internet-explorer
+[gui-shield]: https://img.shields.io/badge/Guilherme%20Ramos-e--Mail-lightgrey.svg
+[html-shield]: https://img.shields.io/badge/HTML5-front--end-blue.svg?logo=HTML5
+[txt-shield]: https://img.shields.io/badge/-TXT-lightgrey.svg?logo=sublime-text
+[flask-shield]: https://img.shields.io/badge/Flask-python_framework-red.svg?logo=Python
+[tkinter-shield]: https://img.shields.io/badge/tKinter-python_framework-red.svg?logo=Python
+[pyinstaller-shield]: https://img.shields.io/badge/PyInstaller-python_framework-red.svg?logo=Python
+[datetime-shield]: https://img.shields.io/badge/Datetime-python_framework-red.svg?logo=Python
+[dreamweaver-shield]: https://img.shields.io/badge/Dreamweaver-code_editor-lightgrey.svg?logo=Adobe-Dreamweaver
+[js-shield]: https://img.shields.io/badge/JavaScript-front--end-blue.svg?logo=JavaScript
+[php-shield]: https://img.shields.io/badge/PHP-front--end_preprocessor-blue.svg?logo=PHP
+[cv2-shield]: https://img.shields.io/badge/OpenCV2-python_framework-red.svg?logo=Python
+[time-shield]: https://img.shields.io/badge/Time-python_framework-red.svg?logo=Python
+[pandas-shield]: https://img.shields.io/badge/Pandas-python_framework-red.svg?logo=Python
+[bootstrap4-url]: https://getbootstrap.com/
+[css-url]: http://www.css3.info/
+[pyenv-url]: https://docs.python.org/3/tutorial/venv.html
+[heruko-url]: https://heroku.com/
+[git-url]: https://git-scm.com/
+[linkedin-url]: https://www.linkedin.com/in/guilhermearamos/
+[vscode-url]: https://code.visualstudio.com/docs
+[python-url]: https://docs.python.org/3/
+[hosts-url]: https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/
+[gui-url]: gui_aramos@outlook.com
+[html-url]: https://www.w3schools.com/html/html5_intro.asp
+[txt-url]: https://en.wikipedia.org/wiki/Comma-separated_values
+[flask-url]: http://flask.pocoo.org/
+[tkinter-url]: https://docs.python.org/3/library/tkinter.html
+[pyinstaller-url]: https://www.pyinstaller.org/
+[datetime-url]: https://docs.python.org/3/library/datetime.html
+[dreamweaver-url]: https://www.adobe.com/products/dreamweaver.html
+[js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[php-url]: https://php.net/
+[cv2-url]: https://pypi.org/project/opencv-python/
+[time-url]: https://docs.python.org/3/library/time.html
+[pandas-url]: https://pandas.pydata.org/
+[license-url]: https://github.com/guiaramos/Best-README-Template/blob/master/LICENSE.txt
+[product-screenshot]: frontend/src/assets/itsamatch.png
+[logo-screenshot]: frontend/src/assets/logo-tindev.svg
